@@ -5,8 +5,8 @@ export default async function handler(req, res) {
   if (!url) return res.status(400).json({ success: false, message: "URL tidak ada" });
 
   try {
-    const apiUrl = `${process.env.TIKTOK_API_URL}?url=${encodeURIComponent(url)}`;
-    const resp = await fetch(apiUrl, { headers: { Authorization: `Bearer ${process.env.TIKTOK_API_KEY}` } });
+    const apiUrl = `${process.env.awi9jngl0fhw0xmy}?url=${encodeURIComponent(url)}`;
+    const resp = await fetch(apiUrl, { headers: { Authorization: `Bearer ${process.env.hhvbU4ucjglom3n4DvWJTG92IpZ1ihW5}` } });
     const json = await resp.json();
 
     if (!json || !json.download) throw new Error("Gagal ambil link");
