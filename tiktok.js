@@ -5,8 +5,8 @@ export default async function handler(req, res) {
   if (!url) return res.status(400).json({ success: false, message: "URL tidak ada" });
 
   try {
-    const apiUrl = `${process.env.https://open.tiktokapis.com/v2/user/data/download/}?url=${encodeURIComponent(url)}`;
-    const resp = await fetch(apiUrl, { headers: { Authorization: `Bearer ${process.env.https://open.tiktokapis.com/v2/user/data/download/}` } });
+    const apiUrl = `${process.env.https://tiktok-video-tanpa-tanda-air2.p.rapidapi.com/user/story?unique_id=%40tiktok}`;
+    const resp = await fetch(apiUrl, { headers: { Authorization: `Bearer ${process.env.https://tiktok-video-tanpa-tanda-air2.p.rapidapi.com/user/story?unique_id=%40tiktok}` } });
     const json = await resp.json();
 
     if (!json || !json.download) throw new Error("Gagal ambil link");
